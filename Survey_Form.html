@@ -1,0 +1,78 @@
+﻿<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <title> Survey Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<br>
+<body>
+
+    <h1 id="title"> Survey form</h1>
+    <p id="description"> With this form you will help us unlock new projects for you </p>
+    <form action="https://survey-form.freecodecamp.rocks/" id="survey-form">
+        <fieldset>
+            <legend>Can you help us know you better?</legend>
+
+            <input id="name" type="text" name="name" required placeholder="Hello my name is..." /><label id="name-label">Please enter your name</label>
+
+            <br>
+            <input id="email" type="email" name="email" required placeholder="john.doe@doe.com" /><label id="email-label">Please insert your email</label>
+            <br>
+            <input id="number" type="number" name="age" min="13" max="90" required placeholder="my age is...." /><label id="number-label">Please insert your age</label>
+            <br>
+            <select name="gender" id="dropdown">
+                Please select your gender
+
+                <option value="male">male</option>
+                <option value="female">female</option>
+                <option value="notsp">not gonna say</option>
+            </select>
+            <label>Can you choose your gender?
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>In the future will you buy something from us?</legend>
+            <div>
+                <label> Do you want to buy something</label>
+                <label><input type="radio" id="type" name="found" value="yes" />yes</label>
+                <label><input type="radio" id="neg" name="found" value="no" />no</label>
+                <label><input type="radio" id="N/A" name="found" value="prob" />probably</label>
+                <label><input type="radio" id="defn" name="found" value="hell" />hell no</label>
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>Please tell us how did you heard about us</legend>
+            <button type="radio" value="Facebook">Facebook</button>
+            <button type="radio" value="Instagram">Instagram</button>
+            <button type="radio" value="notsp">not gonna say</button>
+            <button type="radio" value="someone">Request</button>
+            <button type="radio" value="web">Web</button>
+            </select>
+            <br>
+            </div>
+            <br>
+            <div>
+                <fieldset>
+                    <legend>Can you choose the type of projects do you like?</legend>
+                    <input type="checkbox" type="radio" id="PR" value="survey-form" name="radiobutton" /><label>Public Relations</label>
+                    <input type="checkbox" type="radio" id="marketing" value="survey-form" name="radiobutton" /><label>Marketing</label>
+                    <input type="checkbox" type="radio" id="Program" value="survey-form" name="radiobutton" /><label>Programming</label>
+                </fieldset>
+            </div>
+            <fieldset>
+                <legend name="radiobutton">What type of vehicles do you choose</legend>
+                <input type="checkbox" type="radio" id="vehicle1" name="radiobutton" value="Bike">
+                <label for="vehicle1"> I have a bike</label><br>
+                <input type="checkbox" type="radio" id="vehicle" name="radiobutton" value="Car">
+                <label for="vehicle2"> I have a car</label><br>
+                <input type="checkbox" type="radio" id="vehicle" name="radiobutton" value="Boat">
+                <label for="vehicle3"> I have a boat</label><br>
+
+                <label for="review">Review of our work:</label>
+
+<textarea id="review" name="w3review" rows="4" cols="50" placeholder="My review is ....">
+
+</textarea>
+                <div>
+                    <fieldset>
+                        <button id="submit" type="submit">Submit</button>
